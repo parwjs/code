@@ -1,0 +1,1 @@
+一个生成二维码的SpringBoot,在Controller层可以设置链接
