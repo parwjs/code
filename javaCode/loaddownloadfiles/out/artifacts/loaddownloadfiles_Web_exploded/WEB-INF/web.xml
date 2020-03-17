@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 配置使用fileupload包 -->
+  <servlet>
+    <servlet-name>loadFile</servlet-name>
+    <servlet-class>downservlet.loadFile</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>loadFile</servlet-name>
+    <url-pattern>/loadFile</url-pattern>
+  </servlet-mapping>
+
+  <!-- 配置使用smartuploadfile包 -->
+  <servlet>
+    <servlet-name>smartuploadfile</servlet-name>
+    <servlet-class>downservlet.smartuploadfile</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>smartuploadfile</servlet-name>
+    <url-pattern>/smartuploadfile</url-pattern>
+  </servlet-mapping>
+
+  <!-- 配置morefiles -->
+  <servlet>
+    <servlet-name>morefiles</servlet-name>
+    <servlet-class>downservlet.morefiles</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>morefiles</servlet-name>
+    <url-pattern>/morefiles</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- downloadfiles -->
+  <servlet>
+    <servlet-name>downloadfiles</servlet-name>
+    <servlet-class>downservlet.downloadfiles</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>downloadfiles</servlet-name>
+    <url-pattern>/downloadfiles</url-pattern>
+  </servlet-mapping>
+
+  <!-- DownFileServlet -->
+  <servlet>
+    <servlet-name>DownFileServlet</servlet-name>
+    <servlet-class>downservlet.DownFileServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DownFileServlet</servlet-name>
+    <url-pattern>/DownFileServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
